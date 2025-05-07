@@ -1,15 +1,15 @@
-# Web_Automation_Basic Part.
-##Maven_project##
+### **Web_Automation_Basic Part.**
+### **Maven_project**
 **Here is created maven project.
 
-##pom.xml file##
+### **`pom.xml` file**
 *Here is added the dependency such as selenium,testNG etc. which are taken from mvn repository.
 
-##Class create##
+### **Class create**
 src->test->java-> new_package(rupa_dey)->java_class(e.g, Hello_web).
 
-##For Browser automation##
-```bash
+### **For Browser automation**
+```java
     public class setupDriver {
     public  WebDriver driver;
     @BeforeSuite
@@ -23,16 +23,16 @@ src->test->java-> new_package(rupa_dey)->java_class(e.g, Hello_web).
         driver.quit();
     }
 ```
-##When the new tab is created ##
-```bash
+### **When the new tab is created**
+```java
 driver.switchTo().newWindow(WindowType.TAB);
 ```
-##When The new window is opened##
-```bash
+### **When The new window is opened**
+```java
 driver.switchTo().newWindow(WindowType.WINDOW);
 ```
-##minimize, maximize, fullscreen,back, forward and refresh is automatically controlled##
-```bash
+### **Minimize, maximize, fullscreen,back, forward and refresh is automatically controlled**
+```java
 driver.manage().window().minimize();
         Thread.sleep(2000);
         driver.manage().window().maximize();
@@ -50,10 +50,11 @@ driver.manage().window().minimize();
         driver.navigate().refresh();
         Thread.sleep(2000);
 ```
-#After adding testNG dependency, we will use annotation instead of the main method#
+## After adding TestNG Dependency
+* we will use **annotation** instead of the main method.
 
-##To get automatiocally title and current url#
-```bash
+### **To get automatiocally title and current url**
+```java
 //To get the title
 Assert.assertEquals(driver.getTitle(), "Messenger");
 
